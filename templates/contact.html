@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='estilos.css')}}">
+    <style>
+        .cabeza{
+            color: white;
+           display: grid;
+           justify-content: center;
+           align-items: center;
+           grid-template-columns: 900px auto;
+        }
+        
+        
+        .fondo{
+            color: white;
+        }
+        .yo_enlace{
+            text-decoration: none;
+        
+        }
+        
+        .menu{
+            display:flex;   
+            gap: 50px;
+            color:white;
+        
+        }
+        
+        body{
+            background-image:url("{{url_for('static', filename='imagen/yo.jpg')}}") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            color:white;
+            height: 1500px;
+            
+        }
+        
+        
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+        
+        
+        
+        .contenedor1{
+            display: grid;
+            grid-template-columns: 500px 500px  500px;
+            margin-top: 100px;
+        
+        }
+        
+        .item{
+            display: grid;
+            color: black;
+            margin-top: 100px;
+        }
+        
+        
+        .submenu{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            color: black;
+        }
+        .secont1{
+            color: black;
+        }
+        .secont2{
+            color: black;
+        }
+        .con{
+            color: black;
+        }
+        @media only screen and (max-width:800px){
+            .cabeza{
+                color: white;
+               display: grid;
+               justify-content: center;
+               align-items: center;
+               grid-template-columns: 1fr}  
+        
+            .menu{
+                display:flex;   
+                flex-direction: column;
+                gap: 20px;
+                color:black;}
+            
+            .contenedor{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 10px;
+            }
+            .contenedor1{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 20px;
+                gap: 10px;
+                padding: 10px;
+            
+            }
+           
+            .submenu{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 10px;
+                color: black;
+            }
+            .item {
+                padding: 10px;
+                color: black;
+                
+            }
+            .item img{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            
+            }
+            body{
+                background-image: url("/static/imagen/yo.jpg");
+                background-size: cover;
+                height:auto;
+
+            
+            }
+            .secont1{
+                color: black;
+            }
+            .secont2{
+                color: black;
+            }
+            .con{
+                color: black;
+            }
+        }
+        
+       
+    </style>
+</head>
+</head>
+<body>
+    <header class="cabeza">
+        <div>
+            <a href="http://127.0.0.1:5020/"class=yo_enlace><h1>KRC</h1></a>
+        </div>
+        <div class="menu">
+            <a href="http://127.0.0.1:5020/portafo"class=yo_enlace>PORTAFOLIO</a>
+            <a href="http://127.0.0.1:5020/acerc"class=yo_enlace>ACERCA DE</a>
+            <a href="http://127.0.0.1:5020/conta"class=yo_enlace>CONTACTO</a>
+        </div>
+    </header>
+    <section class="secont1">
+        <div><p>contactanos</p>
+        </div>
+        <div><form>
+            <label for="fname">Nombres</label><br>
+            <input type="text" id="pname" name="pname"><br>
+            <label for="lname">Apellidos</label><br>
+            <input type="text"id="bname" name="bname"><br>
+            
+
+            </form>
+        </div>
+
+    </section>
+    <section class="secont2"></section>
+        <div><p></p>
+        <p></p>
+        </div>
+        <div class="con"><form>
+            <label for="fname">E-mail</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Telefono</label><br>
+            <input type="text"id="lname" name="lname"><br><br>
+            <label for="fmensa">Dejanos un mensajes</label><br>
+            <input type="text" id="fmensa" name=""><br><br>
+            <a href="http://127.0.0.1:5020/"class="yo_enlace">ENVIAR</a>
+            
+        </form>
+        
+    </section>
+    
+</body>
+</html>

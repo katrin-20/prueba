@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='estilos.css')}}">
+    <style>
+        .cabeza{
+            color: white;
+           display: grid;
+           justify-content: center;
+           align-items: center;
+           grid-template-columns: 900px auto;
+        }
+        
+        
+        .fondo{
+            color: white;
+        }
+        .yo_enlace{
+            text-decoration: none;
+        
+        }
+        
+        .menu{
+            display:flex;   
+            gap: 50px;
+            color:white;
+        
+        }
+        
+        body{
+            background-image:url("{{url_for('static', filename='imagen/yo.jpg')}}") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            color:white;
+            height: 1500px;
+            
+        }
+        
+        
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+        
+        
+        
+        
+        .contenedor1{
+            display: grid;
+            grid-template-columns: 500px 500px  500px;
+            margin-top: 100px;
+        
+        }
+        
+        .item{
+            display: grid;
+            margin-top: 100px;
+            color: black;
+        }
+        
+        
+        .submenu{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            color: black;
+        }
+        .secont1{
+            color: black;
+        }
+        .secont2{
+            color: black;
+        }
+        .con{
+            color: black;
+        }
+        @media only screen and (max-width:800px){
+            .cabeza{
+                color: white;
+               display: grid;
+               justify-content: center;
+               align-items: center;
+               grid-template-columns: 1fr}  
+        
+            .menu{
+                display:flex;   
+                flex-direction: column;
+                gap: 20px;
+                color:black;}
+            
+            .contenedor{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 10px;
+            }
+            .contenedor1{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 20px;
+                gap: 10px;
+                padding: 10px;
+            
+            }
+            
+            .submenu{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 10px;
+            }
+            .item {
+                padding: 10px;
+                color: black;
+            }
+            .item img{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            
+            }
+            body{
+                background-image: url("/static/imagen/yo.jpg");
+                background-size: cover;
+                height: auto;
+                
+
+            
+            }
+            .secont1{
+                color: black;
+            }
+            .secont2{
+                color: black;
+            }
+            .con{
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="cabeza">
+        <div>
+            <h1> <a href="http://127.0.0.1:5020/"class=yo_enlace>KRC</h1></a>   
+        </div>
+        
+        <div class="menu">
+            <a href="http://127.0.0.1:5020/portafo"class="yo_enlace">PORTAFOLIO</a>
+            <a href="http://127.0.0.1:5020/acerc"class="yo_enlace">ACERCA DE</a>
+            <a href="http://127.0.0.1:5020/conta"class="yo_enlace">CONTACTO</a>
+
+        </div>
+    </header>
+
+    <section class="fondo">
+       <div class="hi"> 
+        <br><br><br><br><h2>Katrin Ramos</h2>
+        <h2>estudiante</h2>
+    </div>
+       
+        
+    </section>
+</body>
+</html>

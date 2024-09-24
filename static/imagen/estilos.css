@@ -1,0 +1,142 @@
+
+.cabeza{
+    color: white;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: 900px auto;
+}
+
+
+
+
+.fondo{
+    color: white;
+}
+
+.yo_enlace{
+    text-decoration: none;
+}
+
+
+
+
+
+.menu{
+    display:flex;   
+    gap: 50px;
+    color:white;}
+
+
+
+body{
+    background-image:url("imagen/yo.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color:white;
+    height: 1500px;}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+
+
+.contenedor1{
+    display: grid;
+    grid-template-columns: 500px 500px  500px;
+    margin-top: 100px;
+
+}
+
+.item{
+    display: grid;
+    margin-top: 100px;
+    color: black;
+}
+
+.submenu{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    color: black;
+}
+.secont1{
+    color: black;
+}
+.secont2{
+    color: black;
+}
+.con{
+    color: black;
+}
+@media only screen and (max-width:800px){
+    .cabeza{
+        color: white;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       grid-template-columns: 1fr}  
+
+    .menu{
+        display:flex;   
+        flex-direction: column;
+        gap: 20px;
+        color:black;}
+    
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    .contenedor1{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+   
+    .submenu{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+        color: black;
+    }
+    .item {
+        padding: 10px;
+        color: black;
+        
+    }
+    .item img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+    body{
+        background-image: url("/static/imagen/yo.jpg");
+        background-size: cover;
+        height:auto;
+        
+
+    
+    }
+    .secont1{
+        color: black;
+    }
+    .secont2{
+        color: black;
+    }
+    .con{
+        color: black;
+    }
+}
